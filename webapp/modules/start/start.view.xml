@@ -1,0 +1,33 @@
+<mvc:View controllerName="voestalpine.sapui5Start.modules.start.start" 
+    displayBlock="true" 
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core" 
+    xmlns="sap.m" 
+    xmlns:semantic="sap.f.semantic">
+	
+	<semantic:SemanticPage 
+        id="start-page" 
+        headerPinnable="true" 
+        fitContent="true"
+        headerExpanded="false"
+        toggleHeaderOnTitleClick="true" 
+        preserveHeaderStateOnScroll="true"
+	    titleAreaShrinkRatio="1:1.6:1.6" 
+        showFooter="false" 
+        class="semantic-page">
+			
+		<semantic:titleHeading>
+			<Title text="{i18n>appTitle}"/>
+		</semantic:titleHeading>
+		
+		<semantic:headerContent>
+		
+		</semantic:headerContent>
+		
+		<semantic:content>
+           
+		</semantic:content>
+		
+	</semantic:SemanticPage>
+	
+</mvc:View>
