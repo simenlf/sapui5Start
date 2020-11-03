@@ -1,0 +1,52 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:t="sap.ui.table">
+    
+    <t:Table
+		class="sapUiResponsiveMargin"
+		id="startTable"
+		visibleRowCountMode="Auto"
+		selectionMode="Single"
+		rowSelectionChange="onRowSelect"
+		alternateRowColors="true"
+		selectionBehavior="RowOnly"
+		enableSelectAll="false"
+		rows="{path: '/'}"
+		enableBusyIndicator="true"
+		ariaLabelledBy="title">
+		
+		<t:columns>
+			
+			<t:Column
+				sortProperty="OrderID"
+				filterProperty="OrderID"
+				autoResizable="true"
+				width="11rem">
+			    
+				<Label text="OrderID" />
+				
+				<t:template>
+					<Label text="{path: 'OrderID', formatter: '.formatter.removeLeadingZero'}" design="Bold"/>
+				</t:template>
+				
+			</t:Column>
+			
+			<t:Column
+				sortProperty="Material"
+				filterProperty="Material"
+				autoResizable="true">
+			    
+				<Label text="Material" />
+				
+				<t:template>
+					<Label text="{path: 'Material', formatter: '.formatter.removeLeadingZero'}"/>
+				</t:template>
+				
+			</t:Column>
+			
+		</t:columns>
+		
+		<t:noData>
+			<BusyIndicator class="sapUiMediumMargin"/>
+		</t:noData>
+	</t:Table>
+    
+</core:FragmentDefinition>

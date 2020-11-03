@@ -23,9 +23,9 @@
 		<semantic:headerContent>
 		
 		</semantic:headerContent>
-		
+		    <core:Fragment fragmentName="voestalpine.sapui5Start.modules.fragments.startHeader" type="XML"/>
 		<semantic:content>
-           
+           <core:Fragment fragmentName="voestalpine.sapui5Start.modules.fragments.startTableUiTable" type="XML"/>
 		</semantic:content>
 		
 	</semantic:SemanticPage>

@@ -62,11 +62,9 @@
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		},
 		"routing": {
 			"config": {
@@ -78,27 +76,21 @@
 				"controlId": "rootControl",
 				"clearControlAggregation": false
 			},
-			"routes": [
-				{
-					"name": "start",
-					"pattern": "",
-					"titleTarget": "start",
-					"target": "start"
-				},
-				{
-					"name": "RouteRoot",
-					"pattern": "RouteRoot",
-					"target": [
-						"TargetRoot"
-					]
-				},
-				{
-					"name": "detail",
-					"pattern": "detail/{contract}",
-					"titleTarget": "detail",
-					"target": "detail"
-				}
-			],
+			"routes": [{
+				"name": "start",
+				"pattern": "",
+				"titleTarget": "start",
+				"target": "start"
+			}, {
+				"name": "RouteRoot",
+				"pattern": "RouteRoot",
+				"target": ["TargetRoot"]
+			}, {
+				"name": "detail",
+				"pattern": "detail/{id}",
+				"titleTarget": "detail",
+				"target": "detail"
+			}],
 			"targets": {
 				"start": {
 					"viewType": "XML",
