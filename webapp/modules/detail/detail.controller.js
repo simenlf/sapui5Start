@@ -28,7 +28,7 @@ sap.ui.define(["voestalpine/sapui5Start/lib/BaseController","voestalpine/sapui5S
             
             onDataReceived: function(oData){
                 this.getView().setModel(this.makeModel(oData));
-                console.log("Received data",oData.results);
+                console.log("Received data detail page",oData.results);
             }
 		});
 	});
