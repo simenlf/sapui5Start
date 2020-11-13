@@ -1,5 +1,26 @@
 <mvc:View controllerName="voestalpine.sapui5Start.modules.detail.detail" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <VBox>
+        <Label text="{/Material}" />
     
-    
-    
+        <Table id="startTable"
+    		inset="false"
+    		items="{path: '/ProdOrderToProdOrderItem/results'}">
+    		<columns>
+    			<Column
+    				width="12em">
+    				<Text text="Order" />
+    			</Column>
+    			<Column>
+    				<Text text="Material" />
+    			</Column>
+    		</columns>
+    		<items>
+    			<ColumnListItem>
+    				<cells>
+    				    <Text text="{Name}"/>
+    				</cells>
+    			</ColumnListItem>
+    		</items>
+    	</Table>
+    </VBox>
 </mvc:View>
