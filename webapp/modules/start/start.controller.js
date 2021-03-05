@@ -10,7 +10,6 @@ sap.ui.define(["voestalpine/sapui5Start/lib/BaseController","voestalpine/sapui5S
 			formatter: formatter,
 			
 			onInit: function () {
-			    this.getRouter().getRoute("start").attachPatternMatched(this.getInitialData(), this);
             }
 		});
 	});
